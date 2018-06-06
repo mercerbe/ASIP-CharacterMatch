@@ -1,0 +1,26 @@
+{
+  "name": "asip-charactermatch",
+  "version": "1.0.0",
+  "description": "Survey matching user's answers with It's Always Sunny in Philadelphia characters",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercerbe/ASIP-CharacterMatch.git"
+  },
+  "author": "Ben Mercer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mercerbe/ASIP-CharacterMatch/issues"
+  },
+  "homepage": "https://github.com/mercerbe/ASIP-CharacterMatch#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
