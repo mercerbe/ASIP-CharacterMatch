@@ -8,7 +8,8 @@ const app = express();
 
 //ejs views
 app.set('view engine', 'ejs');
-app.set('public', path.join(__dirname, 'public'));
+app.set('public', path.join(__dirname, './app/public'));
+app.use(express.static('public'));
 
 //Express use body-parser
 app.use(bodyParser.json());
@@ -16,8 +17,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 
 //routing
-app.use(express.static(path.join(__dirname, './app/routing/apiRoutes')));
-app.use(express.static(path.join(__dirname, './app/routing/htmlRoutes')));
+require(path.join(__dirname, './app/routing/apiRoutes'))(app);
+require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 //listen
 app.listen(3000, function(){

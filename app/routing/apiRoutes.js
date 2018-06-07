@@ -2,16 +2,11 @@ const path = require('path');
 const ejs = require('ejs');
 const characters = require('../data/characters.js');
 
-
-function ApiRoutes(app){
+module.exports = function(app){
 
   //get all characters
-  app.get('api/friends', function(req,res){
+  app.get('/api/characters', function(req,res){
     res.json(characters);
   });
 
-  //
-
 };
-
-module.exports = ApiRoutes();
