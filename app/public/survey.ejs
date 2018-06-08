@@ -5,16 +5,23 @@
 <% include partials/question %>
 <% include partials/modal %>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     //hide modal
 
 
     $("#submit").on('click', function(event){
+      event.preventDefault();
+      //check for name and image
+      if($("#userName").val() === '' || $("#userImage").val() === ''){
+        event.preventDefault();
+        alert("Some required fields are empty!");
+      }
       //grab user input
       let newUser = {
-        name: $("#userName").val().trim();
-        image: $("#userImage").val().trim();
+        name: $("#userName").val().trim(),
+        image: $("#userImage").val().trim(),
         scores: [
           $("#question1").val().trim(),
           $("#question2").val().trim(),
@@ -31,6 +38,8 @@
       //post user to user data
       $.post('api/users', newUser).then(function(data){
           //show modal and display matched character
+          $("#charMatch").html(data.matchName);
+          $("#charMatchImage").html('src', data.matchImage);
       })
     })
   });

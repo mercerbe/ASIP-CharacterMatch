@@ -1,11 +1,20 @@
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <h4>Closest Friend Match</h4>
-    <div class="divider"></div>
-    <h5 id="userMatch"></h5>
-    <img id="userMatchImage" class="materialboxed" width="650" src="">
-  </div>
-  <div class="modal-footer">
-    <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Take the survey again</a>
+<!-- submit button  -->
+<button type="submit" id="submit" class="btn btn-success submit" data-toggle="modal" data-target="#modal1">Submit</button>
+<!-- Modal -->
+<div class="modal" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your Character Match</h5>
+      </div>
+      <div class="modal-body">
+        <h5 id="charMatch"></h5>
+        <img id="charMatchImage" class="materialboxed" width="" src="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No Thanks</button>
+        <a href="/survey" class="btn btn-success modal-action modal-close">Take the survey again</a>
+      </div>
+    </div>
   </div>
 </div>
