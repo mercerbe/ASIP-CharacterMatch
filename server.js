@@ -5,7 +5,7 @@ const ejs = require('ejs');
 
 //Express
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //ejs views
 app.set('view engine', 'ejs');
@@ -18,9 +18,10 @@ app.use(bodyParser.text());
 //routing
 require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
-app.use(express.static(__dirname + '/public'));
+//app.use(express.static(__dirname + '/public'));
+app.use('/app/public', express.static(process.cwd() + '/app/public'));
 
 //listen
 app.listen(3000, function(){
-  console.log('Listening on Port ' + PORT);
+  console.log('Listening on Port ' + PORT + "...");
 })

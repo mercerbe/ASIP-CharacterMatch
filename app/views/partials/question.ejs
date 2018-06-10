@@ -1,5 +1,7 @@
+<div class="jumbotron survey-jumbo">
+  <h1>Survey</h1>
 <form class="was-validated">
-  <div class="input-field col-md-8">
+  <div class="input-field col-md-6 offset-md-3">
     <h5>Name:</h5>
     <i class="fas fa-user"></i>
     <input type="text" class="form-control is-valid" placeholder="Your Name" id="userName" required>
@@ -8,7 +10,7 @@
     </div>
   </div>
   <br>
-  <div class="input-field col-md-8">
+  <div class="input-field col-md-6 offset-md-3">
     <h5>Link to Photo Image:</h5>
     <i class="fas fa-image"></i>
     <input type="text" class="form-control is-valid" placeholder="Photo Link" id="userImage" required>
@@ -16,10 +18,11 @@
       *this field is required
     </div>
   </div>
-
+</div>
   <hr>
 
-  <div class="input-field col s12">
+<div class="q_wrapper">
+  <div class="input-field col-md-12">
     <h3>Question 1</h3>
     <h5>EJS question</h5>
     <select id="question1">
@@ -31,7 +34,7 @@
     <option value="5">5 (Strongly Agree)</option>
   </select>
   </div>
-  <div class="input-field col s12">
+  <div class="input-field col-md-12">
     <h3>Question 2</h3>
     <h5>EJS question</h5>
     <select id="question2">
@@ -43,7 +46,7 @@
     <option value="5">5 (Strongly Agree)</option>
   </select>
   </div>
-  <div class="input-field col s12">
+  <div class="input-field col-md-12">
     <h3>Question 3</h3>
     <h5>EJS question</h5>
     <select id="question3">
@@ -55,7 +58,7 @@
     <option value="5">5 (Strongly Agree)</option>
   </select>
   </div>
-  <div class="input-field col s12">
+  <div class="input-field col-md-12">
     <h3>Question 4</h3>
     <h5>EJS question</h5>
     <select id="question4">
@@ -67,7 +70,7 @@
     <option value="5">5 (Strongly Agree)</option>
   </select>
   </div>
-  <div class="input-field col s12">
+  <div class="input-field col-md-12">
     <h3>Question 5</h3>
     <h5>EJS question</h5>
     <select id="question5">
@@ -139,4 +142,7 @@
     <option value="5">5 (Strongly Agree)</option>
   </select>
   </div>
+  <!-- submit button  -->
+  <button type="submit" id="submit" class="btn mx-auto btn-success submit" data-target="#modal1">Submit</button>
+</div>
 </form>
