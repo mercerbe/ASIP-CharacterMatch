@@ -19,6 +19,7 @@ app.use(bodyParser.text());
 require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 app.use('/app/public', express.static(process.cwd() + '/app/public'));
+app.use('/app/views', express.static(process.cwd() + '/app/views'));
 
 //listen
 app.listen(3000, function(){

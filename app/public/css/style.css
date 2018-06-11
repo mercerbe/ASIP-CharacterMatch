@@ -28,10 +28,20 @@ body{
 
 .jumbotron h1 {
   font-family: 'Lemonada', cursive;
+  font-size: 100px;
+}
+
+#homeJumbo {
+  padding-bottom: 10%;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 .survey-jumbo {
   text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  padding-bottom: 10%;
 }
 
 .input-field {
