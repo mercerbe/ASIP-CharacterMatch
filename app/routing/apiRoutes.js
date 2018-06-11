@@ -48,7 +48,7 @@ module.exports = function(app){
     }
     //add to users
     users.push(newUser);
-    res.json({ matchName: matchName, matchImage: matchImage });
+    res.json(newUser);
   });
 
 };

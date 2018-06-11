@@ -8,7 +8,7 @@
       <ul class="list-unstyled quick-links">
         <li><a class="links" href="/api/characters"><i class="fa fa-angle-double-right links"></i>Characters API</a></li>
         <li><a class="links" href="/api/users"><i class="fa fa-angle-double-right links"></i>Users API</a></li>
-        <li><a class="links" href="https://github.com/mercerbe/GameOfThronesRPG-game" target="_blank"><i class="fa fa-angle-double-right links"></i>Github Repo</a></li>
+        <li><a class="links" href="https://github.com/mercerbe/ASIP-CharacterMatch" target="_blank"><i class="fa fa-angle-double-right links"></i>Github Repo</a></li>
       </ul>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 mt-2 mt-sm-5">
@@ -43,6 +43,46 @@
   <script>
     $("#homeJumbo").backstretch("/app/public/images/IASIP.jpg");
     $(".survey-jumbo").backstretch("/app/public/images/surveyjumbo.jpg");
+    $(document).ready(function() {
+      //submit form
+      $("#submit").on('click', function(event) {
+
+        //check for name and image
+        if ($("#userName").val() === '' || $("#userImage").val() === '') {
+          event.preventDefault();
+          alert("Some required fields are empty!");
+        } else {
+          event.preventDefault();
+
+          //grab user input
+          let Inputs = {
+            name: $("#userName").val().trim(),
+            image: $("#userImage").val().trim(),
+            scores: [
+              $("#question1").val(),
+              $("#question2").val(),
+              $("#question3").val(),
+              $("#question4").val(),
+              $("#question5").val(),
+              $("#question6").val(),
+              $("#question7").val(),
+              $("#question8").val(),
+              $("#question9").val(),
+              $("#question10").val()
+            ]
+          };
+          console.log(Inputs);
+          //post user to user data
+          $.post('api/users', Inputs).then(function(data) {
+            //show modal and display matched character
+            $("#charMatch").text(data.matchName);
+            $("#charMatchImage").attr('src', data.matchImage);
+            $("#modal1").show();
+          })
+        }
+      })
+
+    });
   </script>
 
 </body>
