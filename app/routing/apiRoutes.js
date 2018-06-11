@@ -15,19 +15,19 @@ module.exports = function(app){
     res.json(users);
   });
 
-  //new character entry
-  app.post('api/characters', function(req, res){
+  //new user entry
+  app.post('api/users', function(req, res){
 
     //user input with path
     let newUser = req.body;
 
     //capture responses
-    let responses = input.scores;
+    let responses = newUser.scores;
 
     //match
     let matchName = '';
     let matchImage = '';
-    let initial = 1000;
+    let initial = 100;
 
     //loop through characters
     for (let i = 0; i < characters.length; i++) {
@@ -36,6 +36,7 @@ module.exports = function(app){
       let diff = 0;
       for (var j = 0; j < responses.length; j++) {
         diff += Math.abs(characters[i].scores[j] - responses[j]);
+        console.log(diff);
       }
       //smallest diff = match
       if(diff < inital){
@@ -47,7 +48,7 @@ module.exports = function(app){
     }
     //add to users
     users.push(newUser);
-    res.json({status: 'ok', matchName: matchName, matchImage: matchImage});
-  })
+    res.json({ matchName: matchName, matchImage: matchImage });
+  });
 
 };

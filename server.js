@@ -18,7 +18,6 @@ app.use(bodyParser.text());
 //routing
 require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
-//app.use(express.static(__dirname + '/public'));
 app.use('/app/public', express.static(process.cwd() + '/app/public'));
 
 //listen

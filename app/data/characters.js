@@ -4,14 +4,14 @@ var Characters = [
     "photo":"https://media1.giphy.com/media/3o7bubaeGyuCOb3HqM/source.gif",
     "scores":[
         5,
-        1,
         4,
         4,
-        5,
-        1,
         2,
         5,
         4,
+        3,
+        3,
+        3,
         1
       ]
   },
@@ -20,30 +20,30 @@ var Characters = [
     "photo":"https://media.giphy.com/media/l1J9OPU2Pw98Me2li/giphy.gif",
     "scores":[
         5,
-        1,
-        4,
-        4,
         5,
-        1,
-        2,
         5,
-        4,
-        1
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
       ]
   },
   {
     "name":"Dee",
     "photo":"https://media.giphy.com/media/l41lY0pUcnufO7pYc/giphy.gif",
     "scores":[
-        5,
         1,
-        4,
-        4,
-        5,
         1,
-        2,
-        5,
-        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         1
       ]
   },
@@ -51,48 +51,48 @@ var Characters = [
     "name":"Charlie",
     "photo":"https://media0.giphy.com/media/2JsswGOTfr3lC/giphy.gif",
     "scores":[
-        5,
-        1,
         4,
         4,
-        5,
-        1,
-        2,
-        5,
         4,
-        1
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
       ]
   },
   {
     "name":"Mac",
     "photo":"https://media.giphy.com/media/3o7btVSfjPzvRDVLFe/source.gif",
     "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
       ]
   },
   {
     "name":"The Waitress",
     "photo":"https://i.gifer.com/1VGK.gif",
     "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
         2,
-        5,
-        4,
-        1
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
       ]
   },
   {
@@ -100,31 +100,31 @@ var Characters = [
     "photo":"https://media0.giphy.com/media/DjVCpTvzAKLaE/giphy.gif",
     "scores":[
         5,
-        1,
-        4,
         4,
         5,
+        3,
+        3,
         1,
-        2,
         5,
         4,
-        1
+        3,
+        3
       ]
   },
   {
     "name":"Cricket",
     "photo":"https://media.giphy.com/media/l0Iy2WkvqrP8DrKyQ/giphy.gif",
     "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
         2,
-        5,
+        2,
+        3,
         4,
-        1
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
       ]
   }
 
