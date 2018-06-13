@@ -3,14 +3,14 @@ var Characters = [
     "name":"Frank",
     "image":"https://media1.giphy.com/media/3o7bubaeGyuCOb3HqM/source.gif",
     "scores":[
-        5,
-        4,
+        2,
+        1,
         4,
         2,
-        5,
+        4,
         4,
         3,
-        3,
+        5,
         3,
         1
       ]
@@ -20,13 +20,13 @@ var Characters = [
     "image":"https://media.giphy.com/media/l1J9OPU2Pw98Me2li/giphy.gif",
     "scores":[
         5,
+        4,
+        1,
         5,
         5,
         5,
         5,
-        5,
-        5,
-        5,
+        1,
         5,
         5
       ]
@@ -35,32 +35,32 @@ var Characters = [
     "name":"Dee",
     "image":"https://media.giphy.com/media/l41lY0pUcnufO7pYc/giphy.gif",
     "scores":[
+        5,
+        2,
+        1,
+        5,
+        5,
+        4,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
+        5,
+        5
       ]
   },
   {
     "name":"Charlie",
     "image":"https://media0.giphy.com/media/2JsswGOTfr3lC/giphy.gif",
     "scores":[
+        1,
+        2,
+        5,
+        2,
+        1,
+        3,
         4,
+        5,
         4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4
+        1
       ]
   },
   {
@@ -68,7 +68,7 @@ var Characters = [
     "image":"https://media.giphy.com/media/3o7btVSfjPzvRDVLFe/source.gif",
     "scores":[
         3,
-        3,
+        5,
         3,
         3,
         3,
@@ -88,7 +88,7 @@ var Characters = [
         2,
         2,
         2,
-        2,
+        1,
         2,
         2,
         2,
@@ -99,14 +99,14 @@ var Characters = [
     "name":"The McPoyles",
     "image":"https://media0.giphy.com/media/DjVCpTvzAKLaE/giphy.gif",
     "scores":[
-        5,
+        2,
+        1,
         4,
-        5,
-        3,
-        3,
+        2,
         1,
         5,
-        4,
+        5,
+        1,
         3,
         3
       ]
@@ -115,16 +115,16 @@ var Characters = [
     "name":"Cricket",
     "image":"https://media.giphy.com/media/l0Iy2WkvqrP8DrKyQ/giphy.gif",
     "scores":[
+        1,
+        1,
+        5,
         2,
+        1,
+        1,
+        5,
+        5,
         2,
-        3,
-        4,
-        3,
-        2,
-        2,
-        2,
-        2,
-        2
+        4
       ]
   }
 
