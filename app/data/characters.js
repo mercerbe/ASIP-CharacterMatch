@@ -1,7 +1,7 @@
 var Characters = [
   {
     "name":"Frank",
-    "photo":"https://media1.giphy.com/media/3o7bubaeGyuCOb3HqM/source.gif",
+    "image":"https://media1.giphy.com/media/3o7bubaeGyuCOb3HqM/source.gif",
     "scores":[
         5,
         4,
@@ -17,7 +17,7 @@ var Characters = [
   },
   {
     "name":"Dennis",
-    "photo":"https://media.giphy.com/media/l1J9OPU2Pw98Me2li/giphy.gif",
+    "image":"https://media.giphy.com/media/l1J9OPU2Pw98Me2li/giphy.gif",
     "scores":[
         5,
         5,
@@ -33,7 +33,7 @@ var Characters = [
   },
   {
     "name":"Dee",
-    "photo":"https://media.giphy.com/media/l41lY0pUcnufO7pYc/giphy.gif",
+    "image":"https://media.giphy.com/media/l41lY0pUcnufO7pYc/giphy.gif",
     "scores":[
         1,
         1,
@@ -49,7 +49,7 @@ var Characters = [
   },
   {
     "name":"Charlie",
-    "photo":"https://media0.giphy.com/media/2JsswGOTfr3lC/giphy.gif",
+    "image":"https://media0.giphy.com/media/2JsswGOTfr3lC/giphy.gif",
     "scores":[
         4,
         4,
@@ -65,7 +65,7 @@ var Characters = [
   },
   {
     "name":"Mac",
-    "photo":"https://media.giphy.com/media/3o7btVSfjPzvRDVLFe/source.gif",
+    "image":"https://media.giphy.com/media/3o7btVSfjPzvRDVLFe/source.gif",
     "scores":[
         3,
         3,
@@ -81,7 +81,7 @@ var Characters = [
   },
   {
     "name":"The Waitress",
-    "photo":"https://i.gifer.com/1VGK.gif",
+    "image":"https://i.gifer.com/1VGK.gif",
     "scores":[
         2,
         2,
@@ -97,7 +97,7 @@ var Characters = [
   },
   {
     "name":"The McPoyles",
-    "photo":"https://media0.giphy.com/media/DjVCpTvzAKLaE/giphy.gif",
+    "image":"https://media0.giphy.com/media/DjVCpTvzAKLaE/giphy.gif",
     "scores":[
         5,
         4,
@@ -113,7 +113,7 @@ var Characters = [
   },
   {
     "name":"Cricket",
-    "photo":"https://media.giphy.com/media/l0Iy2WkvqrP8DrKyQ/giphy.gif",
+    "image":"https://media.giphy.com/media/l0Iy2WkvqrP8DrKyQ/giphy.gif",
     "scores":[
         2,
         2,

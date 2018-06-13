@@ -19,6 +19,7 @@ body{
     box-sizing: inherit;
     font-family: 'Suez One', serif;
     position: relative;
+    background-color: rgb(230,234,237);
 }
 
 .navbar {

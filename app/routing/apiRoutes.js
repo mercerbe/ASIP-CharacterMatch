@@ -1,7 +1,7 @@
-const path = require('path');
-const ejs = require('ejs');
 const characters = require('../data/characters.js');
 const users = require('../data/users.js');
+const path = require('path');
+
 
 module.exports = function(app){
 
@@ -16,13 +16,15 @@ module.exports = function(app){
   });
 
   //new user entry
-  app.post('api/users', function(req, res){
+  app.post('/api/users', function(req, res){
 
     //user input with path
     let newUser = req.body;
+    console.log('new user: \n',newUser);
 
-    //capture responses
-    let responses = newUser.scores;
+    //capture answers
+    let answers = newUser.scores;
+    console.log('answers: \n',answers);
 
     //match
     let matchName = '';
@@ -33,22 +35,25 @@ module.exports = function(app){
     for (let i = 0; i < characters.length; i++) {
 
       //difference for each question
-      let diff = 0;
-      for (var j = 0; j < responses.length; j++) {
-        diff += Math.abs(characters[i].scores[j] - responses[j]);
-        console.log(diff);
+      var diff = 0;
+      for (let j = 0; j < answers.length; j++) {
+        diff += Math.abs(characters[i].scores[j] - answers[j]);
       }
+      console.log(characters[i].name,':',diff);
       //smallest diff = match
-      if(diff < inital){
-        inital = diff;
+      if(diff < initial){
+        initial = diff;
         matchName = characters[i].name;
+        console.log('!!!!!!!!!!MATCH:',matchName.toUpperCase(),'!!!!!!!!!!');
         matchImage = characters[i].image;
+        console.log(matchImage);
       }
 
     }
     //add to users
     users.push(newUser);
-    res.json(newUser);
+    //send response
+    res.json({matchName: matchName, matchImage: matchImage});
   });
 
 };

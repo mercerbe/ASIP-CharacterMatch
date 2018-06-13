@@ -1,3 +1,3 @@
-var Users = [{test: 'test'}];
+var Users = [];
 
 module.exports = Users;

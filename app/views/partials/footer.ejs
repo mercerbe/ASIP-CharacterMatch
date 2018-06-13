@@ -46,19 +46,21 @@
     $(document).ready(function() {
       //submit form
       $("#submit").on('click', function(event) {
-
+        event.preventDefault();
         //check for name and image
         if ($("#userName").val() === '' || $("#userImage").val() === '') {
           event.preventDefault();
+
+          //alert that fields are empty
           alert("Some required fields are empty!");
         } else {
           event.preventDefault();
 
           //grab user input
           let Inputs = {
-            name: $("#userName").val().trim(),
-            image: $("#userImage").val().trim(),
-            scores: [
+            name:$("#userName").val().trim(),
+            image:$("#userImage").val().trim(),
+            scores:[
               $("#question1").val(),
               $("#question2").val(),
               $("#question3").val(),
@@ -68,21 +70,34 @@
               $("#question7").val(),
               $("#question8").val(),
               $("#question9").val(),
-              $("#question10").val()
-            ]
+              $("#question10").val()]
           };
-          console.log(Inputs);
+
           //post user to user data
-          $.post('api/users', Inputs).then(function(data) {
-            //show modal and display matched character
+          $.ajax({
+            url: '/api/users',
+            type: 'POST',
+            dataType: 'JSON',
+            data: Inputs,
+            traditional: true
+          })
+          .done(function(data) {
+            console.log(data);
             $("#charMatch").text(data.matchName);
+            console.log(data.matchName);
             $("#charMatchImage").attr('src', data.matchImage);
+            console.log(data.matchImage);
             $("#modal1").show();
           })
+          .always(function() {
+            console.log("complete");
+          });
+
         }
-      })
+      });
 
     });
+
   </script>
 
 </body>
