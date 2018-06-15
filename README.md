@@ -13,31 +13,15 @@ This is a character match app built with node, express, ejs, bootstrap and css t
 Requires path, body-parser, express, ejs npm packages
 
 ```
-install paths here....
+* npm i path
+* npm i body-parser
+* npm i express
+* npm i ejs
 ```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 
 ## Deployment
 
-notes...
+Deployed on Heroku at: [ASIP Character Match](http://here.com)
 
 ## Built With
 
